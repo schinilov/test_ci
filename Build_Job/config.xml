@@ -1,7 +1,6 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<maven2-moduleset plugin="maven-plugin@2.5">
+<?xml version="1.0" encoding="UTF-8"?><maven2-moduleset plugin="maven-plugin@2.5">
   <actions/>
-  <description></description>
+  <description/>
   <keepDependencies>false</keepDependencies>
   <properties/>
   <scm class="hudson.plugins.git.GitSCM" plugin="git@2.2.6">
@@ -50,8 +49,8 @@
   <buildWrappers/>
   <prebuilders>
     <hudson.tasks.Shell>
-      <command>echo &quot;Start build job&quot;
-sed -i &apos;$d&apos; ./pom.xml
+      <command>echo "Start build job"
+sed -i '$d' ./pom.xml
 cat &lt;&lt;EOF &gt;&gt; ./pom.xml
 &lt;distributionManagement&gt;
   &lt;repository&gt;
@@ -66,7 +65,7 @@ cat &lt;&lt;EOF &gt;&gt; ./pom.xml
 &lt;/project&gt;
 EOF
 SHORT_GIT_COMMIT=`git rev-parse --short HEAD`
-echo BUILD_VERSION=$SHORT_GIT_COMMIT&quot;-&quot;${BUILD_NUMBER}&quot;-&quot;SNAPSHOT &gt; ./env.properties
+echo BUILD_VERSION=$SHORT_GIT_COMMIT"-"${BUILD_NUMBER}"-"SNAPSHOT &gt; ./env.properties
 #echo BUILD_VERSION=1.0.0-SNAPSHOT &gt; ./env.properties</command>
     </hudson.tasks.Shell>
     <EnvInjectBuilder plugin="envinject@1.90">
