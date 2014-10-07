@@ -30,7 +30,7 @@
     <groupId>org.springframework.samples</groupId>
     <artifactId>spring-petclinic</artifactId>
   </rootModule>
-  <goals>clean package deploy</goals>
+  <goals>clean</goals>
   <defaultGoals>install</defaultGoals>
   <aggregatorStyleBuild>true</aggregatorStyleBuild>
   <incrementalBuild>false</incrementalBuild>
@@ -53,18 +53,6 @@
       <command>echo &quot;Start deployment job&quot;
 </command>
     </hudson.tasks.Shell>
-    <EnvInjectBuilder plugin="envinject@1.90">
-      <info>
-        <propertiesFilePath>./env.properties</propertiesFilePath>
-      </info>
-    </EnvInjectBuilder>
-    <hudson.tasks.Maven>
-      <targets>versions:set -DnewVersion=${BUILD_VERSION}</targets>
-      <mavenName>mvn</mavenName>
-      <usePrivateRepository>false</usePrivateRepository>
-      <settings class="jenkins.mvn.DefaultSettingsProvider"/>
-      <globalSettings class="jenkins.mvn.DefaultGlobalSettingsProvider"/>
-    </hudson.tasks.Maven>
   </prebuilders>
   <postbuilders/>
   <runPostStepsIfResult>
