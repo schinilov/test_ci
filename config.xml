@@ -50,7 +50,7 @@
   <buildWrappers/>
   <prebuilders>
     <hudson.tasks.Shell>
-      <command>echo &quot;Start job&quot;
+      <command>echo &quot;Start build job&quot;
 sed -i &apos;$d&apos; ./pom.xml
 cat &lt;&lt;EOF &gt;&gt; ./pom.xml
 &lt;distributionManagement&gt;
