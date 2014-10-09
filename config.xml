@@ -51,7 +51,7 @@
     </listView>
     <au.com.centrumsystems.hudson.plugin.buildpipeline.BuildPipelineView plugin="build-pipeline-plugin@1.4.3">
       <owner class="hudson" reference="../../.."/>
-      <name>CI Pipeline</name>
+      <name>Outdated CI Pipeline</name>
       <filterExecutors>false</filterExecutors>
       <filterQueue>false</filterQueue>
       <properties class="hudson.model.View$PropertyList"/>
@@ -70,7 +70,7 @@
     </au.com.centrumsystems.hudson.plugin.buildpipeline.BuildPipelineView>
     <au.com.centrumsystems.hudson.plugin.buildpipeline.BuildPipelineView plugin="build-pipeline-plugin@1.4.3">
       <owner class="hudson" reference="../../.."/>
-      <name>CI Pipeline 2</name>
+      <name>CI Pipeline</name>
       <filterExecutors>false</filterExecutors>
       <filterQueue>false</filterQueue>
       <properties class="hudson.model.View$PropertyList"/>
