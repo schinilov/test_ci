@@ -10,6 +10,7 @@ git-client
 antisamy-markup-formatter
 subversion
 scm-api
+extensible-choice-parameter
 git
 groovy
 external-monitor-job
@@ -18,6 +19,9 @@ cvs
 matrix-project
 build-pipeline-plugin
 translation
+git-server
+token-macro
+scriptler
 junit
 ant
 mailer

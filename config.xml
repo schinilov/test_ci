@@ -33,6 +33,7 @@
       <properties class="hudson.model.View$PropertyList"/>
       <jobNames>
         <comparator class="hudson.util.CaseInsensitiveComparator"/>
+        <string>Add job to repository</string>
         <string>Commit_changes</string>
         <string>Create_job_from_configuration</string>
       </jobNames>
