@@ -13,7 +13,7 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>echo &quot;Start test job&quot;</command>
+      <command>echo &quot;Start test job_&quot;</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers/>
