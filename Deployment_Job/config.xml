@@ -61,7 +61,7 @@
   <prebuilders>
     <hudson.tasks.Shell>
       <command>echo &quot;Start deployment job&quot;
-exit 1</command>
+</command>
     </hudson.tasks.Shell>
   </prebuilders>
   <postbuilders/>
